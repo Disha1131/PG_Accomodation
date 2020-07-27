@@ -1,0 +1,16 @@
+/* 1000 px max widht */
+@media (max-width: 1295px) { 
+    .about-info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column wrap;
+        flex-direction: column-reverse;
+        
+    }
+ }
+ /* @include media-breakpoint-up(md) {
+    .card-group {
+        display: flex;
+        flex-flow: row wrap;
+    }
+  } */
