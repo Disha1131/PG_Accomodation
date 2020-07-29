@@ -19,7 +19,7 @@
     }
     .gallery .pic{
         width: 30%;
-        height: 90%;
+/*         height: 90%; */
     }
  }
 
@@ -53,7 +53,8 @@
     font-family: 'Dancing Script', cursive;
     }
     .carousel-caption{
-        bottom: 20rem;
+/*         bottom: 20rem; */
+        bottom: 15rem;
     }
  }
  /* @media (max-width: 800px) { 
