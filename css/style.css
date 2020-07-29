@@ -55,7 +55,8 @@ html { -ms-overflow-style: none; }
 
 .carousel-caption h5{
     /* font-size: 5rem; */
-    font-size: calc(1.525rem + 3.3vw);
+/*     font-size: calc(1.525rem + 3.3vw); */
+    font-size: calc(4.3vh + 3.3vw);
     /* font-weight: bold; */
     font-family: 'Dancing Script', cursive;
 }
