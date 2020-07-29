@@ -4,7 +4,7 @@
 }
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: none;
   }
 
 /* -webkit- (Chrome, Safari, newer versions of Opera): */
@@ -54,7 +54,8 @@ html { -ms-overflow-style: none; }
 }
 
 .carousel-caption h5{
-    font-size: 5rem;
+    /* font-size: 5rem; */
+    font-size: calc(1.525rem + 3.3vw);
     /* font-weight: bold; */
     font-family: 'Dancing Script', cursive;
 }
@@ -83,70 +84,26 @@ html { -ms-overflow-style: none; }
     /* color: rgb(9, 166, 214))39, 39, 223); */
   }
 
-/*----------------------------------- Header --------------------------------------*/
-
-/* header{
-    border: solid black 3px;
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.header .header-top{
-    border: solid red 3px;
-    border-bottom: lightgray 1px solid;
-    align-content: center;
-    text-align: center;
-    height: 40px;
-    line-height: 5.6vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-}
-
-.header .header-top .widget-tags a{
-    text-decoration: none;
-    color: black;
-    margin: 10px;
-}
-
-.header .header-top .social-icons{
-    list-style-type: none;
-}
-
-.header .header-top .social-icons li{
-    float: left;
-}
-
-.header .header-top .social-icons li a{
-    margin: 10px;
-    padding: 5px;
-    text-decoration: none;
-}
-
-.header .header-top .social-icons li a i{
-    border: rgb(223, 218, 218) solid 1px;
-    width: 23px;
-    height: 23px;
-    color: black;
-    background: rgb(219, 215, 215);
-    align-content: center;
-    line-height: 21px;
-}
-
-.header a{
-    text-decoration: none;
-} */
 
 /*-------------------------------------------- ABOUT ---------------------------------*/
-#about{
+#about, #contact{
     /* margin-left: 10vw; */
-    width: 100%;
-    display: flex;
+    /* width: 100%; */
+    /* display: flex; */
     margin-top: 10rem;
 
 }
 
 .about-info .about-info-text, .about-info-video{
-    margin: 10px;
+    /* margin: 10px; */
     width: 45%;
     /* flex-shrink: 0; */
 }
@@ -163,6 +120,15 @@ html { -ms-overflow-style: none; }
     font-size: 1.2rem;
     /* color: rgb(9, 166, 214); */
 }
+.about-info-video .carousel-inner{
+    transition:transform 0.25s ease;
+}
+
+.about-info-video .carousel-inner:hover{
+    filter: brightness(70%);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
 
 #more{
     display: none;
@@ -170,16 +136,96 @@ html { -ms-overflow-style: none; }
 
 /* -----------------------------ROOM------------------------------------------ */
 .room-image {
-    background-color: rgb(9, 166, 214);
+    background-color: rgb(9, 166, 214);;
+}
+
+.room-image img{
+    transition:transform 0.25s ease;
+}
+
+.room-image img:hover{
+    filter: brightness(70%);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
 }
 
 .room-info .about-info-text, .room-info-occupancy{
     margin: 10px;
-    width: 45%;
+    /* width: 45%; */
 }
 
 .contact-info .contact-info-cform, .contact-info-box{
-    margin: 10px;
+    /* margin: 10px; */
     width: 45%;
     /* flex-shrink: 0; */
+}
+
+footer .row{
+    --bs-gutter-x: 0;
+}
+
+.gallery{
+    /* border: black 2px solid; */
+    background-color: white;
+    width: 100%;
+    height: 55vh;
+    height: calc(12.525rem + 10.3vw);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 0px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    align-items: center;
+    
+}
+.gallery .pic{
+    background-color: #fff;
+    /* margin: 12px; */
+    width: 20%;
+    height: 100%;
+    /* filter: brightness(50%); */
+    transition:transform 0.25s ease;
+}
+
+.gallery .pic:hover{
+        -webkit-transform:scale(1.2);
+        transform:scale(1.2);
+        /* filter: brightness(100%); */
+}
+
+.gallery .pic img{
+    /* margin: auto; */
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+}
+
+.gallery .pic img:hover{
+    filter: brightness(100%);
+}
+
+.gallery .pic .text{
+  position: relative;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  /* font-size: calc(1.525rem + 0.3vw); */
+  font-size: calc(1.0rem + 0.3vw);
+}
+.gallery .pic .text:hover{
+    /* font-size: 2.2rem; */
+    font-size: calc(1.5rem + 0.3vw);
+  }
+
+.gallery .pic .hidden-text{
+    position: relative;
+  /* bottom: 40%; */
+  bottom: 30%;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
 }
