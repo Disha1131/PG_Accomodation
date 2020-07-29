@@ -1,0 +1,17 @@
+.slide-img .carousel-inner .carousel-caption h5{
+
+}
+.text-wrapper1, .text-wrapper2 {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    /* overflow: hidden; */
+  }
+
+  .slider-text1, .slider-text2{
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
