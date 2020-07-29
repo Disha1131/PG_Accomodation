@@ -1,16 +1,87 @@
 /* 1000 px max widht */
-@media (max-width: 1295px) { 
-    .about-info {
+@media (max-width: 870px) { 
+    .container {
         display: flex;
         flex-wrap: wrap;
         flex-flow: column wrap;
         flex-direction: column-reverse;
+        justify-content: center; 
+    }
+    .contact-info .contact-info-cform, .contact-info-box{
+        /* margin: 10px; */
+        width: auto;
+        /* flex-shrink: 0; */
+    }
+    .about-info .about-info-text, .about-info-video{
+        /* margin: 10px; */
+        width: auto;
+        /* flex-shrink: 0; */
+    }
+    .gallery .pic{
+        width: 30%;
+        height: 90%;
+    }
+ }
+
+ @media (max-width: 1300px) { 
+    .card-group {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
         
     }
  }
- /* @include media-breakpoint-up(md) {
+
+ @media (max-width: 1300px) and (min-width: 940px) { 
     .card-group {
         display: flex;
-        flex-flow: row wrap;
+        flex-wrap: wrap;
+        flex-flow: column wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+        max-width: 70%;
     }
-  } */
+ }
+
+ @media (max-width: 780px) and (min-width: 300px){ 
+    .slide-img .carousel-item .carousel-caption h5{
+       font-size: 40px;
+       /* font-size: calc(1.525rem + 3.3vw); */
+       /* font-size: xx-small; */
+    font-family: 'Dancing Script', cursive;
+    }
+    .carousel-caption{
+        bottom: 20rem;
+    }
+ }
+ /* @media (max-width: 800px) { 
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column wrap;
+        flex-direction: column-reverse;
+    }
+ } */
+
+ @media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1170px;
+    }}
+ 
+    /* @media (min-width: 992px){
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+}}
+@media (min-width: 768px)
+{.container, .container-md, .container-sm {
+    max-width: 720px;
+}
+}
+@media (min-width: 576px){
+    .container, .container-sm {
+        max-width: 540px;
+    }
+} */
+
