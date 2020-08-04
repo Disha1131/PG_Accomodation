@@ -50,12 +50,13 @@ html { -ms-overflow-style: none; }
 }
 
 .carousel-caption{
-    bottom: 15rem;
+    bottom: 40vh;
+    /* vertical-align: center; */
 }
 
 .carousel-caption h5{
     /* font-size: 5rem; */
-/*     font-size: calc(1.525rem + 3.3vw); */
+    /* font-size: calc(1.525rem + 3.3vw); */
     font-size: calc(4.3vh + 3.3vw);
     /* font-weight: bold; */
     font-family: 'Dancing Script', cursive;
@@ -93,15 +94,7 @@ html { -ms-overflow-style: none; }
     margin-left: auto;
 }
 
-
 /*-------------------------------------------- ABOUT ---------------------------------*/
-#about, #contact{
-    /* margin-left: 10vw; */
-    /* width: 100%; */
-    /* display: flex; */
-    margin-top: 10rem;
-
-}
 
 .about-info .about-info-text, .about-info-video{
     /* margin: 10px; */
@@ -136,9 +129,6 @@ html { -ms-overflow-style: none; }
 }
 
 /* -----------------------------ROOM------------------------------------------ */
-.room-image {
-    background-color: rgb(9, 166, 214);;
-}
 
 .room-image img{
     transition:transform 0.25s ease;
@@ -221,6 +211,10 @@ footer .row{
     /* font-size: 2.2rem; */
     font-size: calc(1.5rem + 0.3vw);
   }
+
+/* .gallery .pic .hidden-text{
+    display: none;
+} */
 
 .gallery .pic .hidden-text{
     position: relative;
