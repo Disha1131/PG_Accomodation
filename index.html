@@ -23,10 +23,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <title>ExtendedHome</title>
 
+
 </head>
 
 <body>
- 
+
   <div class="slider" id="home">
     <div class="menunav">
       <nav class="navbar fixed-top navbar-expand-lg navbar-light">
@@ -48,9 +49,6 @@
               <li class="nav-item">
                 <a class="nav-link text-white" href="#room">ROOMS</a>
               </li>
-<!--               <li class="nav-item">
-                <a class="nav-link text-white" href="#">GALLERY</a>
-              </li> -->
               <li class="nav-item">
                 <a class="nav-link text-white" href="#contact">CONTACT</a>
               </li>
@@ -112,7 +110,7 @@
   </div> -->
   <div id="about" style="height:auto;" class=" mt-5 pt-5">
     <container class="about-info container container-fluid justify-content-center d-flex mt-5">
-      <div class="about-info-video d-inline-block h-75 p-3">
+      <div class="about-info-video d-inline-block h-50 p-3">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -157,14 +155,20 @@
         <button type="button" onclick="seeMore()" id="seeMore" class="btn btn-outline-info">See More</button>
       </div>
   </div>
+  </div>
+
+  <!-- <div style="height:10vh;">
+  </div> -->
 
   <div id="room" style="height:auto;" class=" mt-5 pt-5">
     <h2 class="heading text-center mt-5">Our Rooms</h2>
     <container class="room-image d-flex container-fluid justify-content-center mt-5" style="height: auto;">
 
-      <div class="card-group container">
+      <div class="card-group container"
+        style="background: url('../PG_Accomodation/img/rooms/one.png') center no-repeat;background-size: cover; opacity: 0.8;">
         <div class="card h-auto w-15 p-5 m-1">
-          <img src="../PG_Accomodation/img/rooms/one.png" class="card-img-top" on-="grow" alt="..." style="height: 15rem;">
+          <a href="room1.html"><img src="../PG_Accomodation/img/rooms/one.png" class="card-img-top" on-="grow" alt="..."
+              style="height: 15rem;"></a>
           <div class="card-body">
             <h5 class="card-title">One Bed Room</h5>
             <p class="card-text">
@@ -178,15 +182,16 @@
           </div>
           <div class="card-footer">
             <small class="text-muted">
-              <span><a href="#contact" class="btn btn-primary btn-block mr-5">Rs. 5000/mo &nbsp;<span
+              <span><a href="../PG_Accomodation/room1.html" class="btn btn-primary btn-block mr-5">Rs. 5000/mo &nbsp;<span
                     class="badge bg-dark">4</span></a></span>
               <!-- View More >> -->
             </small>
           </div>
         </div>
         <div class="card h-auto w-15 p-5 m-1">
-          <img src="../PG_Accomodation/img/rooms/twobed.jpg" class="card-img-top" alt="..." style="height: 15rem;">
-          <div class="card-body">
+          <a href="room2.html"><img src="../PG_Accomodation/img/rooms/twobed.jpg" class="card-img-top" alt="..." style="height: 15rem;">
+          </a> 
+            <div class="card-body">
             <h5 class="card-title">Two Bed Room</h5>
             <p class="card-text">
             <ul class="list-group">
@@ -199,14 +204,15 @@
           </div>
           <div class="card-footer">
             <small class="text-muted">
-              <span><a href="#contact" class="btn btn-primary btn-block mr-5">Rs. 5000/mo &nbsp;<span
+              <span><a href="../PG_Accomodation/room2.html" class="btn btn-primary btn-block mr-5">Rs. 5000/mo &nbsp;<span
                     class="badge bg-dark">4</span></a></span>
-              </small>
+            </small>
           </div>
         </div>
         <div class="card h-auto w-15 p-5 m-1">
-          <img src="../PG_Accomodation/img/rooms/four.jpg" class="card-img-top" alt="..." style="height: 15rem;">
-          <div class="card-body">
+          <a href="room3.html"><img src="../PG_Accomodation/img/rooms/four.jpg" class="card-img-top" alt="..." style="height: 15rem;">
+          </a> 
+            <div class="card-body">
             <h5 class="card-title">Three Bed Room</h5>
             <p class="card-text">
             <ul class="list-group">
@@ -219,14 +225,13 @@
           </div>
           <div class="card-footer">
             <small class="text-muted">
-              <span><a href="#contact" class="btn btn-primary btn-block mr-5">Rs. 5000/mo &nbsp;<span
+              <span><a href="../PG_Accomodation/room3.html" class="btn btn-primary btn-block mr-5">Rs. 5000/mo &nbsp;<span
                     class="badge bg-dark">4</span></a></span>
-              </small>
+            </small>
           </div>
         </div>
       </div>
     </container>
-
     <container id="features" class="features m-5">
       <h1 class="heading text-center p-5">
         Features
@@ -269,8 +274,10 @@
   <!-- <br><br><br> -->
   <div id="contact" style="height:auto;" class=" mt-5 pt-5">
     <h2 class="heading text-center mt-5">Get in Touch with Us</h2>
-    <container class="contact-info container container-fluid d-flex f justify-content-center mt-5">
-      <div class="contact-info-cform d-inline-block h-75 p-3 m-2 border border-info rounded">
+    <container class="contact-info container container-fluid d-flex f justify-content-center mt-5"
+      style=" background: url('img/contact.jpg') center no-repeat;background-size: cover; opacity: 0.9;">
+      <div class="contact-info-cform d-inline-block h-75 p-3 m-2 border border-info rounded bg-light"
+        style="opacity: 0.9;">
         <div class="mb-3">
           <label for="formGroupExampleInput" class="form-label">Name</label>
           <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your name">
@@ -292,7 +299,7 @@
         <button type="button" class="btn btn-info btn-lg btn-block">Submit</button>
       </div>
 
-      <div class="contact-info-box h-75 d-inline-block p-3 m-2 bg-info text-center text-white">
+      <div class="contact-info-box h-75 d-inline-block p-3 m-2 bg-info text-center text-white" style="opacity: 0.8;">
         <h3>Contact Us here</h3>
         <p><span class="font-weight-bold">Reach us</span>
           <br>
@@ -309,41 +316,12 @@
     </container>
   </div>
 
-  <footer class="pt-4 my-md-5 pt-md-5 border-top bg-info">
-    <div class="row">
-      <div class="col-12 col-md">
-        <!-- <img class="mb-2" src="/docs/5.0/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24"> -->
-        <small class="d-block mb-3 text-light"> ExtendedHOME © 2017-2020</small>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Features</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-light" href="#">Cool stuff</a></li>
-          <li><a class="link-light" href="#">Random feature</a></li>
-          <li><a class="link-light" href="#">Team feature</a></li>
-          <li><a class="link-light" href="#">Stuff for developers</a></li>
-          <li><a class="link-light" href="#">Another one</a></li>
-          <li><a class="link-light" href="#">Last time</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-light" href="#">Resource</a></li>
-          <li><a class="link-light" href="#">Resource name</a></li>
-          <li><a class="link-light" href="#">Another resource</a></li>
-          <li><a class="link-light" href="#">Final resource</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="link-light" href="#">Team</a></li>
-          <li><a class="link-light" href="#">Locations</a></li>
-          <li><a class="link-light" href="#">Privacy</a></li>
-          <li><a class="link-light" href="#">Terms</a></li>
-        </ul>
-      </div>
+  <footer class="pt-4 px-4 mt-md-5 pt-md-5 border-top bg-info">
+    <div class="row d-flex align-content-center">
+      <h4 class="text-center mb-4 text-light"> ExtendedHOME © 2017-2020</h4>
+      <p class="text-light text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis vitae
+        nemo itaque ea ipsam necessitatibus omnis placeat unde non! Eaque.</p>
+ 
     </div>
   </footer>
 
@@ -392,6 +370,7 @@
       }
     }
   </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <!-- <script src="js/carousel-animations.js"></script> -->
   <script>
@@ -417,47 +396,46 @@
     var slidertext2 = document.querySelector('.text-wrapper2 .slider-text2');
     slidertext2.innerHTML = slidertext2.textContent.replace(/\S/g, "<span class='slider-text2'>$&</span>");
 
-anime.timeline({loop:true})
-  .add({
-    targets: '.text-wrapper2 .slider-text2',
-    translateY: ["1.1em", 0],
-    translateX: ["0.55em", 0],
-    translateZ: 0,
-    rotateZ: [180, 0],
-    duration: 2000,
-    easing: "easeOutExpo",
-    delay: (el, i) => 50 * i
-  }).add({
-    targets: '.cap2 h5',
-    opacity: 0,
-    duration: 1500,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
+    anime.timeline({ loop: true })
+      .add({
+        targets: '.text-wrapper2 .slider-text2',
+        translateY: ["1.1em", 0],
+        translateX: ["0.55em", 0],
+        translateZ: 0,
+        rotateZ: [180, 0],
+        duration: 2000,
+        easing: "easeOutExpo",
+        delay: (el, i) => 50 * i
+      }).add({
+        targets: '.cap2 h5',
+        opacity: 0,
+        duration: 1500,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
   </script>
   <script>
     var slidertext3 = document.querySelector('.text-wrapper3 .slider-text3');
     slidertext3.innerHTML = slidertext3.textContent.replace(/\S/g, "<span class='slider-text3'>$&</span>");
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.text-wrapper3 .slider-text3',
-    translateY: [100,0],
-    translateZ: 0,
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 2000,
-    delay: (el, i) => 300 + 30 * i
-  }).add({
-    targets: '.cap3 h5',
-    translateY: [0,-100],
-    opacity: [1,0],
-    easing: "easeInExpo",
-    duration: 1500,
-    delay: (el, i) => 100 + 30 * i
-  });
+    anime.timeline({ loop: true })
+      .add({
+        targets: '.text-wrapper3 .slider-text3',
+        translateY: [100, 0],
+        translateZ: 0,
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 2000,
+        delay: (el, i) => 300 + 30 * i
+      }).add({
+        targets: '.cap3 h5',
+        translateY: [0, -100],
+        opacity: [1, 0],
+        easing: "easeInExpo",
+        duration: 1500,
+        delay: (el, i) => 100 + 30 * i
+      });
   </script>
 </body>
 
 </html>
-
