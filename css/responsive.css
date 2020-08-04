@@ -19,10 +19,14 @@
     }
     .gallery .pic{
         width: 30%;
-/*         height: 90%; */
+        /* height: 100%; */
     }
- }
 
+    /* ROOM PAGE */
+    #about-room .about-room-info .about-info-text, .about-info-video{
+        width: auto;
+ }
+}
  @media (max-width: 1300px) { 
     .card-group {
         display: flex;
@@ -53,7 +57,6 @@
     font-family: 'Dancing Script', cursive;
     }
     .carousel-caption{
-/*         bottom: 20rem; */
         bottom: 15rem;
     }
  }
@@ -70,19 +73,3 @@
     .container, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 1170px;
     }}
- 
-    /* @media (min-width: 992px){
-.container, .container-lg, .container-md, .container-sm {
-    max-width: 960px;
-}}
-@media (min-width: 768px)
-{.container, .container-md, .container-sm {
-    max-width: 720px;
-}
-}
-@media (min-width: 576px){
-    .container, .container-sm {
-        max-width: 540px;
-    }
-} */
-
